@@ -30,15 +30,15 @@ export default function App() {
   }, []);
 
   return (
-    <SafeAreaView className="flex-1 bg-[#0e0e0e] items-center justify-center">
-      <Text className="text-white text-sm font-bold mb-3 tracking-widest">
-        GSoC Result Countdown
+    <View className="flex-1 bg-[#0e0e0e] items-center justify-center">
+      <Text className="text-white text-center text-xl font-bold mb-3">
+        GSoC Result in
       </Text>
       <View className="p-8 bg-black rounded-3xl border-2 border-white shadow-xl items-center">
         <Text className="text-cyan-400 text-center text-4xl font-extrabold tabular-nums">
           {timeLeft || 'Calculating...'}
         </Text>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
